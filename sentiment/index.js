@@ -3,17 +3,22 @@ const express = require('express');
 const axios = require('axios');
 const logger = require('./logger');
 const expressPino = require('express-pino-logger')({ logger });
-const natural = require("natural");
+// Task 1: import the natural library
+const natural = {{insert code here}}
 
-const app = express();
+// Task 2: initialize the express server
+{{insert code here}}
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(expressPino);
 
 // Define the sentiment analysis route
-app.post('/sentiment', async (req, res) => {
-    const { sentence } = req.query;
+// Task 3: create the POST /sentiment analysis
+app.{{insert method here}}('{{insert route here}}', async (req, res) => {
+
+    // Task 4: extract the sentence parameter
+    const { sentence } = {{insert code here}};
 
 
     if (!sentence) {
@@ -40,15 +45,16 @@ app.post('/sentiment', async (req, res) => {
 
         // Logging the result
         logger.info(`Sentiment analysis result: ${analysisResult}`);
-        // Responding with the sentiment analysis result
-        res.status(200).json({ sentimentScore: analysisResult, sentiment: sentiment });
+
+        // Task 6: send a status code of 200 with both sentiment score and the sentiment txt in the format { sentimentScore: analysisResult, sentiment: sentiment }
+        {{insert code here}}
     } catch (error) {
         logger.error(`Error performing sentiment analysis: ${error}`);
-        res.status(500).json({ message: 'Error performing sentiment analysis' });
+        // Task 7: if there is an error, return a HTTP code of 500 and the json {'message': 'Error performing sentiment analysis'}
+        {{insert code here}}
     }
 });
 
-// Start the server
 app.listen(port, () => {
     logger.info(`Server running on port ${port}`);
 });
