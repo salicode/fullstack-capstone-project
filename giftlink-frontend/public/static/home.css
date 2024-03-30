@@ -1,19 +1,74 @@
 /* Task 1: Style the body */
 body {
-    /* insert code here */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f4f4f4;
 }
 
 /* Task 2: Create a pseudo-element for the background and blur */
 body::before {
     /* insert code here */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo192.png');
+    filter: blur(8px);
+    
 }
 
 /* Task 3: Style the content area */
 .content {
     /* insert code here */
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #f4f4f4;
+    max-width: fit-content;
 }
 
 /* Task 4: Add styles for headings, paragraphs, and buttons */
 h1, h2, .lead, .btn-primary {
     /* insert code here */
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: #333; 
+}
+
+h2 {
+    /* Task: Customize font size, weight, and color for max-width, h2 */
+    max-width: 800px; 
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #444; 
+}
+
+.lead {
+    /* Task: Style .lead for the quote */
+    font-style: italic; 
+    color: #777; 
+}
+
+.btn-primary {
+    /* Task: Adjust .btn-primary for the button’s visual design */
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: 500; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+
 }
