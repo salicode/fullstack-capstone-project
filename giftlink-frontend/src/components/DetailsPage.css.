@@ -1,0 +1,37 @@
+
+.image-placeholder-large {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color
+}
+
+/* Style for product image */
+.product-image-large {
+    /* Task 2 styling */
+    /* Insert code under this */
+}
+
+/* Style for 'no image available' placeholder */
+.no-image-available-large {
+    /* Task 3 styling */
+    /* Insert code under this */
+}
+
+/* Style for card header */
+.card-header {
+    /* Task 4 styling */
+    /* Insert code under this */
+}
+
+/* Style for details title */
+.details-title {
+    /* Task 5 styling */
+    /* Insert code under this */
+}
+
+/* Style for comments section */
+.comments-section {
+    /* Task 6 styling */
+    /* Insert code under this */
+}
