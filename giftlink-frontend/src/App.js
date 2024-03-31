@@ -3,8 +3,8 @@ import { Routes, Route, useNavigate} from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import LoginPage from './components/LoginPage/LoginPage';
-import RegisterPage from './components/RegisterPage/RegisterPage';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
