@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 const express = require('express');
 const router = express.Router();
 const connectToDatabase = require('../models/db');
@@ -5,7 +7,6 @@ const connectToDatabase = require('../models/db');
 // Search for gifts
 router.get('/', async (req, res, next) => {
     try {
-
         // Task 1: Connect to MongoDB
         const db = await connectToDatabase();
         const collection = db.collection("gifts");
